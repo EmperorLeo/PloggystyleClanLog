@@ -25,7 +25,11 @@ public class ClanMember {
 				return null;
 			}
 			active = true;
-			info.setMasteryLevel(mainPage.select(".masteryLv").text().split(" ")[1]);
+			try {
+				info.setMasteryLevel(mainPage.select(".masteryLv").text().split(" ")[1]);
+			} catch(IndexOutOfBoundsException e) {
+				info.setMasteryLevel("0");
+			}
 			
 			Document itemPage = Jsoup.connect("http://na-bns.ncsoft.com/ingame/bs/character/data/equipments?c=" + URLEncoder.encode(characterName, "UTF-8")).get();
 			info.setWeapon(itemPage.select(".wrapWeapon .name").text());

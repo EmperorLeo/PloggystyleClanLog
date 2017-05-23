@@ -13,7 +13,7 @@ public class ActivePlogs {
 			new ClanMember("Riley Delirium"),
 			new ClanMember("Coko"),
 			new ClanMember("Tinge I"),
-			new ClanMember("lmmortal"),
+			new ClanMember("Sugartits"),
 			new ClanMember("yaak"),
 			new ClanMember("Koyol"),
 			new ClanMember("Sybil Reisz"),
@@ -78,5 +78,7 @@ public class ActivePlogs {
 			new ClanMember("tmags"),
 			new ClanMember("Sekaî"),
 			new ClanMember("Rinaa"),
-			new ClanMember("Lobitax")));
+			new ClanMember("Lobitax"),
+			new ClanMember("imELSV"),
+			new ClanMember("LiviaChu")));
 }
